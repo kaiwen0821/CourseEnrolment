@@ -35,7 +35,7 @@ const diplomas = [
       },
       {
         id: "payment",
-        name: "Payment Technology",
+        name: "C372 | Payment Technology",
         description: "This module introduces students to different payment technologies and systems.",
         credits: 4
       }

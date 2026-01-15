@@ -2,41 +2,69 @@ const diplomas = [
   {
     id: "dip-it",
     name: "Information Technology",
+    description: "Software, web and mobile application development",
     modules: [
       {
         id: "web-dev",
         name: "C219 | Web App Development",
-        description: "In this module, students will learn the fundamentals of building web applications, including designing user interfaces, implementing interactive features with HTML, CSS, and JavaScript, and connecting to data sources for dynamic content.",
+        description:
+          "Learn HTML, CSS, JavaScript, React and modern web development.",
         credits: 4
       },
       {
-        id: "mobile app",
+        id: "mobile-dev",
         name: "C346 | Mobile App Development",
-        description: "In this module, students will learn the fundamentals of creating mobile applications, including designing user interfaces, implementing interactive features, and integrating data to build fully functional Android and iOS apps.",
+        description:
+          "Build Android and iOS apps using modern mobile frameworks.",
         credits: 4
       },
       {
         id: "uiux",
         name: "C218 | UI/UX Design for Apps",
-        description: "Students will be equipped with knowledge in User Experience (UX) design in areas such as requirement gathering, creating and analysis of the User Interfaces (UI) in this module.",
+        description:
+          "Understand UX principles and UI design for digital products.",
         credits: 4
       }
     ]
   },
   {
-    id: "dip-ds",
+    id: "dip-fintech",
     name: "Financial Technology",
+    description: "Finance combined with software and digital payments",
     modules: [
       {
-        id: "software app",
+        id: "software-app",
         name: "C237 | Software Application Development",
-        description: "This module equips students with the skills and knowledge required to develop software applications for both web and mobile platforms.",
+        description:
+          "Develop full-stack software applications.",
         credits: 4
       },
       {
         id: "payment",
         name: "C372 | Payment Technology",
-        description: "This module introduces students to different payment technologies and systems.",
+        description:
+          "Learn digital payment systems and technologies.",
+        credits: 4
+      }
+    ]
+  },
+  {
+    id: "dip-ai",
+    name: "Applied AI & Analytics",
+    description: "Artificial intelligence and data analytics used to solve real-world problems",
+    modules: [
+      {
+        id: "software-app",
+        name: "C235 | IT Security and Management",
+        description:
+          "Learn how to protect systems and manage IT security.",
+        credits: 4
+      },
+      {
+        id: "payment",
+        name: "C240 | AI Essentials and Innovations",
+        description:
+          "Learn basic AI concepts and modern AI applications.",
         credits: 4
       }
     ]
@@ -44,7 +72,12 @@ const diplomas = [
 ];
 
 export function getDiplomas() {
-  return diplomas.map(d => ({ id: d.id, name: d.name }));
+  return diplomas.map(d => ({
+    id: d.id,
+    name: d.name,
+    description: d.description,
+    modules: d.modules
+  }));
 }
 
 export function getDiploma(id) {

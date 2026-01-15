@@ -1,19 +1,17 @@
-import { Link, NavLink } from "react-router-dom";
-import logo from "../assets/rp-logo.png";
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
-  const getClass = ({ isActive }) => (isActive ? "nav-active" : null);
+  const cls = ({ isActive }) => (isActive ? "nav-active" : null);
 
   return (
     <header className="container">
-      <Link to="/" className="logo-link">
-        <img src={logo} alt="School Logo" className="logo" />
-      </Link>
-
+      <h2>School of Infocomm</h2>
       <nav>
-        <NavLink to="/" className={getClass}>Home</NavLink>
-        <NavLink to="/diplomas" className={getClass}>Diplomas</NavLink>
-        <NavLink to="/register" className={getClass}>Register</NavLink>
+        <NavLink to="/" className={cls}>Home</NavLink>
+        <NavLink to="/diplomas" className={cls}>Diplomas</NavLink>
+        <NavLink to="/register" className={cls}>Register</NavLink>
+        <NavLink to="/favourites" className={cls}>Favourites</NavLink>
+        <NavLink to="/faq" className={cls}>FAQ</NavLink>
       </nav>
     </header>
   );

@@ -11,14 +11,9 @@ export default function Diploma() {
 
       <ul className="session-list">
         {diploma.modules.map(m => (
-          <li className="session" key={m.id}>
-            <NavLink
-              to={m.id}
-              className={({ isActive }) =>
-                isActive ? "session-active" : null
-              }
-            >
-              <p className="session-name">{m.name}</p>
+          <li key={m.id} className="session">
+            <NavLink to={m.id}>
+              {m.name}
             </NavLink>
           </li>
         ))}

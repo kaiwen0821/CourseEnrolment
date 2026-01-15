@@ -111,6 +111,11 @@ a.session-active {
   width: 220px;
 }
 
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
 .img-feat {
   width: 100%;
   border-radius: 0.35em;

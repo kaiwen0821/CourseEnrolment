@@ -1,30 +1,19 @@
-import featImg from "../assets/img-main.jpg";
+import banner from "../assets/img-main.jpg";
 
 export default function Home() {
   return (
     <div className="container">
       <img
+        src={banner}
+        alt="School of Infocomm"
         className="img-feat"
-        src={featImg}
-        alt="Red30 Tech conference attendees on a laptop"
       />
 
-      <h1>Welcome</h1>
+      <h1>Welcome to Republic Polytechnic</h1>
       <p>
-        This is a fictitious company and conference created by{" "}
-        <a
-          href="https://www.linkedin.com/feed/"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          LinkedIn Corporation, or its affiliates
-        </a>
-        , solely for the creation and development of educational training
-        materials. Any resemblance to real products or services is purely
-        coincidental. Information provided about the products or services is
-        also fictitious and should not be construed as representative of actual
-        products or services on the market in a similar product or service
-        category.
+        Explore the diplomas offered by the School of Infocomm at Republic Polytechnic.
+        Discover the modules available under each diploma, learn more about course
+        content, and register your interest in areas that match your career goals.
       </p>
     </div>
   );
